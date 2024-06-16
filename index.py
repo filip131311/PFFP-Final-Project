@@ -100,7 +100,6 @@ data = pd.read_csv(file_path, header=None, names=['Date', 'Period', 'Value'])
 data['Value'] = data['Value'].astype(float)
 
 market_data = list(map(lambda value: value[2], data.values))
-print (np.std(market_data))
 
 model = IRM(r0=market_data[0], theta=0.5, mu=0.03, sigma=0.02)
 model.calibrate(market_data)
