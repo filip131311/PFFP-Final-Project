@@ -20,3 +20,5 @@ For example runs the project uses polish interest rate data published by europea
 - matplotlib
 - scipy
 
+### Author 
+Filip Kamiński
